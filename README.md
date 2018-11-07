@@ -1,5 +1,8 @@
 # metadata-one-liners
-retrive metadata endpoint data with these one liners.
+
+Retrive metadata endpoint data with these one liners.
+
+Feel free to do a PR request if you want to add or alter anything.
 
 
 
