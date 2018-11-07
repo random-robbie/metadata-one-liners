@@ -157,6 +157,31 @@ busybox wget --header="Metadata: true" http://169.254.169.254/metadata/instance?
 ```
 
 
+NC
+---
 
+AWS
+
+```
+echo -e "GET /latest/meta-data/ HTTP/1.0\r\n\r\n" | nc 169.254.169.254 80
+```
+
+Digital Ocean
+
+```
+echo -e "GET /metadata/v1/ HTTP/1.0\r\n\r\n" | nc 169.254.169.254 80
+```
+
+Google
+
+```
+TBC
+```
+
+Azure
+
+```
+TBC
+```
 
 
