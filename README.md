@@ -24,7 +24,7 @@ python -c 'import urllib2; print(urllib2.urlopen("http://169.254.169.254/metadat
 Google
 
 ```
-python -c 'import urllib2; print(urllib2.urlopen("http://metadata/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json").read())'
+python -c 'import urllib2; print(urllib2.urlopen("http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json").read())'
 ```
 
 Azure (not complete) need headers
@@ -56,7 +56,7 @@ python3 -c 'import urllib.request; print(urllib.request.urlopen("http://169.254.
 Google
 
 ```
-python3 -c 'import urllib.request; print(urllib.request.urlopen("http://metadata/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json").read())''
+python3 -c 'import urllib.request; print(urllib.request.urlopen("http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json").read())''
 ```
 
 
@@ -86,7 +86,7 @@ wget -q -O - http://169.254.169.254/metadata/v1/
 Google
 
 ```
-wget --header="Metadata-Flavor: Google" http://metadata/computeMetadata/v1/project/attributes/ssh-keys?alt=json
+wget --header="Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?alt=json
 ```
 
 Azure
@@ -118,7 +118,7 @@ curl http://169.254.169.254/metadata/v1/
 Google
 
 ```
-curl -H Metadata-Flavor:Google http://metadata/computeMetadata/v1/project/attributes/ssh-keys?alt=json
+curl -H Metadata-Flavor:Google http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?alt=json
 ```
 
 Azure
@@ -147,7 +147,7 @@ busybox wget -q -O - http://169.254.169.254/metadata/v1/
 Google
 
 ```
-busybox wget --header="Metadata-Flavor: Google" http://metadata/computeMetadata/v1/project/attributes/ssh-keys?alt=json
+busybox wget --header="Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?alt=json
 ```
 
 Azure
