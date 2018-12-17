@@ -119,6 +119,7 @@ Google
 
 ```
 curl http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json
+curl http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes/kube-env
 ```
 
 Azure
