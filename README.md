@@ -128,6 +128,8 @@ Google
 curl http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json
 curl http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/sshKeys
 curl http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes/kube-env
+curl http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/identity
+curl http://metadata.google.internal/computeMetadata/v1beta1/instance/hostname
 ```
 
 Azure
