@@ -209,10 +209,12 @@ TBC
 
 ### Oracle Cloud
 ```
-http://192.0.0.192/latest/
-http://192.0.0.192/latest/user-data/
-http://192.0.0.192/latest/meta-data/
-http://192.0.0.192/latest/attributes/
+http://169.254.169.254/opc/v1/instance/
+http://169.254.169.254/opc/v1/instance/metadata/ (gets public sshkey)
+http://169.254.169.254/opc/v1/instance/shape
+http://169.254.169.254/opc/v1/identity/cert.pem
+http://169.254.169.254/opc/v1/identity/key.pem
+http://169.254.169.254/opc/v1/identity/intermediate.pem
 ```
 
 ### Alibaba
