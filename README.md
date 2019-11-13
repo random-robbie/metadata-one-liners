@@ -131,6 +131,15 @@ curl http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes
 curl http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/identity
 curl http://metadata.google.internal/computeMetadata/v1beta1/instance/hostname
 curl http://metadata.google.internal/computeMetadata/v1beta1/instance/attributes/?recursive=true&alt=json
+
+curl http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?alt=json -H "Metadata-Flavor: Google"
+curl http://metadata.google.internal/computeMetadata/v1/project/attributes/sshKeys -H "Metadata-Flavor: Google"
+curl http://metadata.google.internal/computeMetadata/v1b/instance/attributes/kube-env -H "Metadata-Flavor: Google"
+curl http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/identity -H "Metadata-Flavor: Google"
+curl http://metadata.google.internal/computeMetadata/v1/instance/hostname -H "Metadata-Flavor: Google"
+curl http://metadata.google.internal/computeMetadata/v1/instance/attributes/?recursive=true&alt=json -H "Metadata-Flavor: Google"
+
+
 ```
 
 Azure
