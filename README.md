@@ -188,12 +188,18 @@ Azure
 busybox wget --header="Metadata: true" http://169.254.169.254/metadata/instance?api-version=2017-04-02
 ```
 
-AWS
+Powershell
 ---
 
 ```
-$localInstanceAvailabilityZone = (invoke-webrequest "hhttp://169.254.169.254/latest/meta-data/iam/security-credentials/").content
+powershell.exe -Command "invoke-webrequest http://169.254.169.254/latest/meta-data/iam/security-credentials/ | Select-Object -Expand Content"
 ```
+
+```
+powershell.exe -Command "invoke-webrequest http://metadata.google.internal/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json | Select-Object -Expand Content"
+```
+
+
 
 
 
