@@ -249,9 +249,9 @@ http://100.100.100.200/latest/meta-data/image-id
 ```
 
 
-### Rethink DB
+# Rethink DB
 
-# Google
+### Google
 ```
 r.http('http://metadata.google.internal/computeMetadata/v1/project/attributes/ssh-keys?alt=json',{  header: { 'Metadata-Flavor': 'Google' } })
 ```
